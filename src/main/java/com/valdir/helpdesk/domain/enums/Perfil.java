@@ -1,7 +1,7 @@
 package com.valdir.helpdesk.domain.enums;
 
 public enum Perfil {
-	ADMIN(0, "ROLE_ADMIN"), CLIENTE(1, "ROLE_CLIENTE"), TECNICO(2, "ROLE_CLIENTE");
+	ADMIN(0, "ROLE_ADMIN"), CLIENTE(1, "ROLE_CLIENTE"), TECNICO(2, "ROLE_TECNICO");
 	private Integer codigo;
 	private String descricao;
 	
@@ -27,7 +27,7 @@ public enum Perfil {
 				return x;
 			}
 		}
-		throw new IllegalArgumentException("Status inválido");
+		throw new IllegalArgumentException("Perfil inválido");
 	}
 	
 	

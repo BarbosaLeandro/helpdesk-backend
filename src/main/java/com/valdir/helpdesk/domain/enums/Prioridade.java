@@ -1,7 +1,7 @@
 package com.valdir.helpdesk.domain.enums;
 
 public enum Prioridade {
-	ABERTO(0, "ABERTO"), ANDAMENTO(1, "ANDAMENTO"), ENCERRADO(2, "ENCERRADO");
+	BAIXA(0, "BAIXA"), MEDIA(1, "MEDIA"), ALTO(2, "ALTO");
 	private Integer codigo;
 	private String descricao;
 	
@@ -27,8 +27,10 @@ public enum Prioridade {
 				return x;
 			}
 		}
-		throw new IllegalArgumentException("Perfil inválido");
+		throw new IllegalArgumentException("Prioridade inválida");
 	}
 	
 	
 }
+
+
