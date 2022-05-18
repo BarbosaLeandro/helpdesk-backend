@@ -1,7 +1,7 @@
 package com.valdir.helpdesk.domain.enums;
 
 public enum Prioridade {
-	BAIXA(0, "BAIXA"), MEDIA(1, "MEDIA"), ALTO(2, "ALTO");
+	BAIXO(0, "BAIXA"), MEDIO(1, "MEDIA"), ALTO(2, "ALTO");
 	private Integer codigo;
 	private String descricao;
 	
