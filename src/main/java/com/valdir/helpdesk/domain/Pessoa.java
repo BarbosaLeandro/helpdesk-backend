@@ -16,6 +16,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.valdir.helpdesk.domain.enums.Perfil;
 
@@ -27,6 +28,7 @@ public abstract class Pessoa implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	protected Integer id;
 	protected String nome;
+	
 	
 	@Column(unique = true)
 	protected String cpf;
