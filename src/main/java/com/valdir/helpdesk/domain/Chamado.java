@@ -47,6 +47,7 @@ public class Chamado  implements Serializable{
 	public Chamado(Integer id,Prioridade prioridade, Status status, String titulo, String observacoes, Tecnico tecnico, Cliente cliente) {
 		super();
 		this.id = id;
+		this.prioridade = prioridade;
 		this.status = status;
 		this.titulo = titulo;
 		this.observacoes = observacoes;
